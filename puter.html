@@ -14,33 +14,20 @@
             gear or whatever
             <hr style="border: 1px solid lightgrey;">
     </div>
-    <div>
-        <div style="position: relative; top:100px; left:400px">
-            <div class="one">
-                <p>jess-pc</p>
-                <div style="color:white; font-size: 16px; margin-top: -25px;">this is my main computer, i use it only for
-                    playing games
-                
-                
-                <br>
-                <ul>
-                    <li>ryzen 5 5700x</li>
-                    <li>32gb ddr 3600mhz</li>
-                    <li>rtx 3070</li>
-                    <li>2tb sn770 boot</li>
-                    <li>2x 1tb ssd</li>
-                    <li>2x 4tb hdd</li>
-                </ul>
-                </div>
-            </div>
-            <img src="/assets/images/jess-pc.png" style="width:250px;">
+    <div class="container">
+        <div class="element1">
+            <img src="assets/images/jess-pc.png" width="100%">
         </div>
+        <div class="element2">
+            <p style="color: lightgrey; font-size: 18px; padding: 10px;">
+
+            </p>
     </div>
 </body>
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: url(/assets/backgrounds/stucco\ 8.jpg);
+        background-image: url(assets/backgrounds/stucco\ 8.jpg);
         color: lightgrey
     }
 
@@ -54,10 +41,35 @@
         width: 200px;
     }
 
+    /* from https://www.geeksforgeeks.org/css/how-to-handle-overlapping-elements-with-z-index-using-css/ */
     .two {
         position: relative;
         top: 35px;
         right: 30px;
         width: 200px;
+    }
+
+    .container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .element1 {
+        position: relative;
+        top: 65 px;
+        width: 200px;
+        height: auto;
+        z-index: 0;
+    }
+
+    .element2 {
+        position: relative;
+        top: 30px;
+        left: 150px;
+        background-color: white;
+        width: 100px;
+        height: auto;
+        z-index: 1;
     }
 </style>
