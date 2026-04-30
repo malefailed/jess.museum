@@ -14,51 +14,72 @@
 
 <body>
     <div>
-        <h1 style="margin-bottom: -10px;">jess museum</h1>
+        <h1 class="text-gradient" style="margin-bottom: -10px;">jess museum</h1>
         <p style="font-size: 20px;">by jess from <a href="https://jess.dog">jess.dog</a></p>
 
     </div>
     <hr style="border: 1px solid lightgrey;">
     <div>
-        <h2 style="color:lightgreen">hiiii !!!!</h2>
+        <h2>hiiii !!!!</h2>
         <p style="font-size: 18px;">
             hi!!! im jess im 19 and i like computers and music!!! and this is my webbed site!<br>
             im finally deciding on a layout for here so stay tuned in! i have alot of idea for stuff :3
         </p>
+        <div style="display: flex;">
+            <div>
+                <h3>
+                    listen to me yap (socials)
+                </h3>
+                <ul>
+                    <li><a href="https://twitter.com/malefailed">twitter</a></li>
+                    <li><a href="https://discordapp.com/users/963942632696971307">my discord porfile</a></li>
+                    <li><a href="https://www.last.fm/user/malefailed">my last.fm profile</a></li>
+                    <li><a href="https://www.instagram.com/iamgoated14/">insta</a></li>
+
+                </ul>
+            </div>
+            <div style="margin-left: 50px; width: 40%; margin-top: 50px;">
+                <img src="assets/images/antidepressants.png" width="100%">
+            </div>
+        </div>
+        <hr style="border: 1px solid lightgrey;">
         <h3>
-            listen to me yap (socials)
+            cool things about me
         </h3>
-        <ul>
-            <li><a href="https://twitter.com/malefailed">twitter</a></li>
-            <li><a href="https://discordapp.com/users/963942632696971307">my discord porfile</a></li>
-<li><a href="concerts.txt">concerts ive been to!!!</a></li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <img src="assets/images/antidepressants.png">
-        <p style="font-size: 10px; margin-top: -5px;">yup this is wheat im choosing to dump my free time into. sighhh
+        <p>
+            i really love live music and go to as many shows as i can no matter what genre. u can see a full list <a
+                href="concerts.txt">here :3</a>
+            <br>
+            <br>
+            i have a pretty serious problem with collecting physical music. my discogs is valued at over 2k. u can see
+            everything <a href="https://www.discogs.com/user/malefailed/collection">here!</a> no im not selling any, yes
+            i
+            do listen to them all.
         </p>
     </div>
     <hr style="border: 1px solid lightgrey;">
     <div style="max-height: 333px; display: flex;">
+        <div style="margin-right: 20px;">
+            <script id="cid0020000437915890981" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js"
+                style="width: 100%;height: 100%;">{ "handle": "jessdog", "arch": "js", "styles": { "a": "0084EF", "b": 100, "c": "FFFFFF", "d": "FFFFFF", "k": "0084EF", "l": "0084EF", "m": "0084EF", "n": "FFFFFF", "p": "10", "q": "0084EF", "r": 100, "fwtickm": 1 } }</script>
+        </div>
+        <div><a href="https://www.last.fm/user/malefailed"><img
+                    src="https://lastfm-recently-played.vercel.app/api?user=malefailed" alt="recently played"></a>
+        </div>
 
-        <div style="margin-right: 20px;"><script id="cid0020000437915890981" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js"
-            style="width: 100%;height: 100%;">{ "handle": "jessdog", "arch": "js", "styles": { "a": "0084EF", "b": 100, "c": "FFFFFF", "d": "FFFFFF", "k": "0084EF", "l": "0084EF", "m": "0084EF", "n": "FFFFFF", "p": "10", "q": "0084EF", "r": 100, "fwtickm": 1 } }</script></div>
-            <div><a href="https://www.last.fm/user/malefailed"><img
-                        src="https://lastfm-recently-played.vercel.app/api?user=malefailed" alt="recently played" /></a></div>
-            
 
     </div>
     <hr style="border: 1px solid lightgrey;">
     <div>
         <h2 style="color:lightgreen">bom <p style="font-size: 10px;">(so far)</p>
         </h2>
-        <p>
         <ol>
             <li><a href="https://bettysgraphics.neocities.org/backgrounds">Backgrounds</a></li>
             <li><a href="https://panzi.github.io/Browser-Ponies/">Browser Ponies</a></li>
+            <li><a href="https://colorffy.com/text-gradient-generator">text gradient generator</a></li>
         </ol>
+        <p>
+            this site is running on <a href="https://pages.github.com">github pages!</a> you can view the entire source of my website and its history at <a href="https://github.com/malefailed/jess.museum">malefailed/jess.museum</a>. feel free to copy, edit, or iterate on my code for ur own projects!
         </p>
     </div>
 </body>
@@ -66,7 +87,7 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(assets/backgrounds/stucco\ 8.jpg);
-        color: lightgrey
+        color: white;
     }
 
     h1 {
@@ -74,8 +95,43 @@
         font-size: 50px;
     }
 
+    h2 {
+        color: #ff91ef;
+    }
+
+    h3 {
+        color: #00d9ff;
+    }
+
     a {
-        color: lightblue;
+        color: rgb(175, 175, 255);
+        text-decoration: underline;
+
+
+    }
+
+    /* text gradient generated from https://colorffy.com/text-gradient-generator */
+
+    /* Modern CSS (Progressive Enhancement) */
+    .text-gradient {
+        /* Default: sRGB interpolation */
+        --_space: ;
+
+        background-image: linear-gradient(45deg var(--_space),
+                #00d9ff,
+                #ff91ef 59%,
+                #fff 100%);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Modern: OKLCH interpolation */
+    @supports (background-image: linear-gradient(in oklch, #000, #fff)) {
+        .text-gradient {
+            --_space: in oklch;
+        }
     }
 </style>
 
