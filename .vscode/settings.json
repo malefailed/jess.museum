@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/index.html""vscode_custom_css.imports": [
+        ""
+    ]
 }
