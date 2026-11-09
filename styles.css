@@ -1,0 +1,39 @@
+.fade {
+}
+
+
+.background-image {
+    background-image: url(image.png);
+    filter: invert(74%) sepia(23%) saturate(1081%) hue-rotate(123deg) brightness(82%) contrast(101%);
+    /*filter computed from https://codepen.io/sosuke/pen/Pjoqqp */
+    width: 100dvh;
+    height: 100dvh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    background-color: #ffffff;
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-left: 20px;
+    color: #FDFFFC;
+}
+
+.header {
+    z-index: 99;
+    color: white;
+}
+
+.centering_header {
+    margin-left: 10px;
+    text-align: left;
+    align-self: flex-start;
+    flex: 1;
+    text-decoration: none;
+}

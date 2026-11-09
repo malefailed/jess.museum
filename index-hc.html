@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>high contrast :3</title>
-            <script>
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        });
+
+<head>
+    <meta charset="UTF-8">
+    <title>high contrast test :3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
     </script>
-        </head>
-        <body>
-            <div>
-                <h1></h1>
-            </div>
-        </body>
+</head>
+<body>
+<div class="background-image"></div>
+<div class="header"></div>
+
+    
+    <div class="content">
+        <p>meowmeowmeow</p>
+    </div>
+</body>
+
 </html>
+
+<!-- color scheme ref meow
+ink black #011627
+porcelain #FDFFFC
+light sea green #2EC4B6
+strawberry red #E71D36
+amber glow #FF9F1C
+
+
+-->
